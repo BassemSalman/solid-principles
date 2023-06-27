@@ -10,11 +10,6 @@ Pros:
 
 => encourages use of interfaces & abstract classes
 
-Using dependency injection
-
-ClassA -> IClassA
-include IClass inside Constructor of class that wants to use ClassA
-
 
 Examples:
 
