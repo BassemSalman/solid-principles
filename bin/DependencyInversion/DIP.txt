@@ -1,0 +1,39 @@
+High-level modules should not depend on low-level modules. Both should depend on abstractions.
+Abstractions should not depend on details. Details should depend on abstractions.
+This means that we want to make our code less dependent on specific implementations and more dependent on abstractions.
+
+Pros:
+- Maintenance
+- Testing
+- Flexibility
+
+
+=> encourages use of interfaces & abstract classes
+
+Using dependency injection
+
+ClassA -> IClassA
+include IClass inside Constructor of class that wants to use ClassA
+
+
+Examples:
+
+1)
+For example, let's say we have a class called ShoppingCart that needs to interact with a payment processor. If we write our code so that the ShoppingCart class depends on a specific implementation of a payment processor, then our code will be tightly coupled to that implementation. 
+If we ever want to change the payment processor that we're using, we'll have to make changes to the ShoppingCart class.
+
+However, if we write our code so that the ShoppingCart class depends on an abstraction, such as an IPaymentProcessor interface, then our code will be loosely coupled. This means that we can change the payment processor that we're using without having to make any changes to the ShoppingCart class.
+
+=> i can remove completely implementation of PaymentProcessor and switch it with other implementation
+
+2)
+RemoteControl: TV, click()
+TV: ..
+
+I can let TV extend OnOffDevice
+then RemoteControl: OnOffDevicem, click()
+
+=> can use remote control for any OnOffDevice! Which is a high level component 
+
+The DIP and the OCP are closely related, but they are not the same thing. The DIP is about decoupling our code, while the OCP is about making our code extensible.
+

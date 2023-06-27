@@ -1,0 +1,13 @@
+SRP is to let each class have solely one purpose, and not filled with excessive functionality
+
+Pros:
+- Encapsulation: Each class encapsulates behavior related to its responsibility
+- Scalability
+- Modularity
+- Maintainability
+
+
+Cons:
+- Might be unecessary to split into lots of classes for a simple topic 
+
+ If a class starts to have multiple responsibilities, it may be an indication that it should be split into smaller, more focused components, each with its own single responsibility.

@@ -1,0 +1,12 @@
+Classes that implement an interface should not be required to implement methods that are irrelevant to them.
+The goal of the Interface Segregation Principle is to keep interfaces focused and cohesive, promoting modularity and reducing coupling between components.
+
+Pros:
+- Single Responsibility
+- Flexibility and Extensibility
+- Reduces unnecessary dependencies
+
+Cons:
+- Increased Complexity
+- Interface Explosion => hard to maintain
+- Potential Over-Abstraction (Breaking down too granularly)

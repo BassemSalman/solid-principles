@@ -1,0 +1,27 @@
+Classes should be:
+- Open for extension
+- Closed for modification
+
+In other words:
+Upon needing to add more functionality, more classes are to be added 
+and not old classes are to be edited!
+(Polymorphism on Steroids)
+
+Pros: 
+- Extensibility
+- Code Reusability
+- Scalability
+
+Cons:
+- Could be hard to understand in certain cases
+- Could be hard to implement
+- Additional layers may impact performance
+- OverEngineering 
+
+Simple examples:
+- AreaCalculator class must work with any type of Shape no matter how many 
+shapes I add later on 
+- Addition of new Animal species must not change code that might depend on it 
+extend original class animal and implement the needed classes
+- Instead of defining extra attribute "discount" to a product, create
+a DiscountedProduct extending Product and implement custom getPrice() depending on discount
